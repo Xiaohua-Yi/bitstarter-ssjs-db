@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Xi\'zai\</title>
+    <title>Leibniz</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
@@ -59,6 +59,11 @@
       p {
         font-size: 18px;
         line-height: 24px;
+      }
+
+      /* Intro */
+      .intro {          
+        text-align: justify;
       }
 
       /* Video pitch and Action */
@@ -153,21 +158,33 @@
       <!-- Font and paired font of .heading/.subheading and body from Google Fonts -->
       <!-- www.google.com/fonts/specimen/Ubuntu -->
       <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
+
       <div class="row-fluid heading">
         <div class="span12">
-          <h1>Xi \'zai\</h1>
+          <h1>Leibniz - Write Math, Not Code.</h1>
         </div>
       </div> 
       <div class="row-fluid subheading">
         <div class="span12">
           <!-- Special typography from Bootstrap for lead paragraph. -->
           <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
-          <p class="lead">Write Math, Not Code</p>
+          <p class="lead">Would it be nice if we comunicate with computers in natural math language?</p>
         </div>
       </div>
-      <div class="row-fluid pitch">
-        <div class="span5 offset1 video">
-          <img class="img-polaroid" src="http://placehold.it/480x300">
+
+      <!-- begining of the first row -->
+      <div class="row-fluid pitch">        
+        <div class="span5 offset1 intro">
+          <p> Have you ever dreamed of communicating with computers in the native tongue of mathematics, namely, 
+              natural math language when doing math using computers?
+          </p>  
+
+          <p> I know I have, as a matter of fact, for many years. And this is what this project is all about -- 
+              To develop an easy-to-use declarative language that maximally resembles natural math language 
+              with the constraint of ASCII for defining math problems -- numerical, symbolic, or even logical. 
+              Impossible, right? <a href="mailto:rogeryi@comcast.net"> Send us an email </a> with your contact 
+              info, and we will send you the link to our demo in the cloud!
+          </p>      
         </div>
 
         <!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->
@@ -230,69 +247,158 @@
         </div>
       </div>
 
-      <!-- Beyond this part the marketing copy begins. -->
+      <!-- begining of the second row -->
+      <!-- Beyond this part the marking copy begins -->
       <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/text-align -->
       <!-- http://twitter.github.io/bootstrap/base-css.html#images -->
       <!-- http://placehold.it -->
-      <div class="row-fluid section1">
-        <div class="span5 offset1 asset">
-          <img class="img-polaroid" src="http://placehold.it/480x300">
-        </div>
+    	<div class="row-fluid section1">
+    		<div class="span5 offset1 asset">
+    			<img class="img-polaroid" src="ui.png">                  
+    		</div>		
+    		
         <div class="span5 copy">
-          <p>
-            Xi (prounced \'zai\) is a web services for math education applications.
+          <p> Leibniz is a hybrid language that mixes English and symbolic expressions. The common 
+              structures it includes (assertion, command, and query) and the logical 
+              representation of math concepts and entities, are what give rise to its impressive 
+              express power.
           </p>
-        </div>
-      </div>
 
-      <div class="row-fluid section2">
+          <p> Indeed, if MOOC is to hold to the promise of democritizing education better than previous 
+              hypes, it must SCALE beyond content delivery, especially in teacher/students interactions. 
+              It's a high order, but Leibniz can help -- question asking and easy-to-follow solution are 
+              just the tip of the iceberg of what it can offer!
+          </p>      
+        </div>      
+    	</div>
+      <!-- end of the second row -->
+
+      <!-- begining of the third row -->
+      <div class="row-fluid section2">  
         <div class="span5 offset1 copy copy-right">
-          <p>
-             Xi uses Leibniz -- a hybrid language mixing natural language and symbolic expressions.  Leibniz is similar to natural math language and consequently, Xi's users can focus on their applications instead of learning a brand new computer language.
-          </p>
+          <p> Just as mathematics is the foundation for physics and engineering, among others, Leibniz language
+              is meant to be the parent language from which domain languages can be derived with domain-specific 
+              lexicons and expanded grammar when necessary. 
+          </p> 
+        </div>  
+        
+        <div class="span5 asset" border="0">
+          <img class="img-polaroid" src="Leibniz_family_tree.png" border="0">       
         </div>
-        <div class="span5 asset">
-          <img class="img-polaroid" src="http://placehold.it/480x300">
-        </div>
-      </div>
+      </div>  
+      <!-- end of the second row -->
 
-      <!-- For the FAQ, we introduce a little bit of JS, using the accordion. -->
-      <!-- This brings in jquery.js and bootstrap.js as dependencies. -->
-      <!-- http://twitter.github.io/bootstrap/javascript.html#collapse -->
-      <div class="row-fluid faq">
-          <div class="span10 offset1">
-            <h3>FAQ</h3>
-            <div class="accordion" id="accordion2">
-              <div class="accordion-group">
-                <div class="accordion-heading">
-                  <a class="accordion-toggle" data-toggle="collapse"
-                     data-parent="#accordion2" href="#collapseOne">
-                    What does FAQ stand for?
-                  </a>
-                </div>
-                <div id="collapseOne" class="accordion-body collapse">
-                  <div class="accordion-inner">
-                    Frequently Asked Question.
-                  </div>
+      <!-- beginning of the 4th row -->
+      <div class="row-fluid notation" align="center">
+            <p> Comparsion between natural math notation and the corresponding Leibiz representation </p>
+            <iframe src="Leibniz_and_natural_math_notation.pdf" 
+                    width="972" height="320" style="float:middle" frameborder="4"></iframe>
+      </div> 
+      <!-- end of the 4th row -->
+
+    	<!-- For the FAQ, we introduce a little bit of JS, using the accordion. -->
+    	<!-- This brings in jquery.js and bootstrap.js as dependencies. -->
+    	<!-- http://twiter.github.io/bootstrap/javascript.html#collapse -->
+    	<div class="row-fluid faq">
+    		<div class="span10 offset1">
+    			<h3>FAQ</h3>
+    			<div class="accordion" id ="accordion2">
+    				<div class="accordion-group">
+    					<div class="accordion-heading">
+    						<a class="accordion-toggle" data-toggle="collapse" 
+    						 data-parent="#accordion2" href="#collapseOne">
+    							How are you going to monetize this?
+    						</a>
+    					</div>
+
+    					<div id ="collapseOne" class="accordion-body collapse">
+    						<div class="accordion-inner">
+      						<p>
+                    We plan on providing learning service to institutions with value-added functionalities such as homework 
+                    composing and grading in both standardized form and simple-structured open form. For a brief introduction 
+                    about how web-based homework assignment works, <a href="http://www.webwork.maa.org">visit WebWork's maa site</a>.              
+                    Our service will send notifications to teachers/TAs when Leibniz fails to give students satisfying answers to 
+                    their questions/problems such that they can get further assistances. If these services are proved saving 
+                    time for teachers/TAs and allowing them to spend more time with students face-to-face in traditional campus, 
+                    or improving learning experience of students in MOOC setting, there is money to be earned from these 
+                    primimum services.
+                  </p>
+
+                  <p>
+                    Another potential source of revenue is charging technical users who doing routine but tedious numerical work on a 
+                    daily basis based on their actual use of Leibniz. Part of the fees will be used to pay the PaaS vender and the
+                    rest will go to us. In addition, if the users have powerful workstations or muli-core machines in their offices, 
+                    we may install the software locally for them too, which can run from the same browser interface. "cloud computing" 
+                    is the current trend, but we see no reason to abondon the computing harware one already has. Users who access Leibniz 
+                    locally will be required to pay a traditional software licence fee.
+    						</div>
+    					</div>
+    				</div>
+                                    
+            <div class="accordion-group">
+    					<div class="accordion-heading">
+    						<a class="accordion-toggle" data-toggle="collapse" 
+    						   data-parent="#accordion2" href="#collapseTwo">
+    							The project is a demanding one involves computer science and mathematics.  What are your credentials?
+    						</a>					
+    					</div>				
+
+    					<div id ="collapseTwo" class="accordion-body collapse">
+    						<div class="accordion-inner">
+    							The designer and implementor of Leibniz language (Xiaohua Yi) horned his programming skills in the past decades
+                  in academia, goverment and industries. In addition to his experience in numerical and symbolic computing, 
+                  He studied Compiler with Boris Stilman, and Natural Language Processing with James H. Martin. These are 
+                  the most important domain knowledge needed for crafting a hybrid language like Leibniz.
+    						</div>
+    					</div>
+            </div>                         
+
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse" 
+                   data-parent="#accordion2" href="#collapseThree">
+                  What is the current status of the project?
+                </a>          
+              </div>        
+
+              <div id ="collapseThree" class="accordion-body collapse">
+                <div class="accordion-inner">
+                  <p>
+                    Our development is somewhere in between "prototype" and "product", perhaps a little closer to the "product" end. 
+                    The project was started in about five and half years ago, although the idea was formed during my graduate years 
+                    at USC. Grammar definition of the language is mostly finalized and considerable implementation has been completed, 
+                    including core numerical and symbolic libraries, and some simple logical programming functionality that enables 
+                    Leibniz to perform mathematical reasoning in the context of single variable calculus. To our best knowledge, 
+                    formal reasoning in calculus by software is something that nobody has ever tried before despite that reasoning is 
+                    an essential skill math students are expected to acquire. Our numerical libraries include modules for in-core 
+                    LU and QR decomposition of large sparse matrices.
+                  </p>
+                  <p>
+                    But there are many tasks remain to be done -- the libraries as they stand now are very fragile and incomplete. 
+                    The interpreter is mostly written in C++ with Microsoft's compiler, which makes it hard to cross compile on linux. 
+                    Taking Dr. Balaji S. Srinivasan's course has been very helpful in introducing us to the nodejs/express stack 
+                    for web application development. <b>Thank you! B.</b> Currently, I am also taking 10gen's  MOOC course on 
+                    mongoDB with nodejs. Has been a very good experience so far, but we are still debating if we should use mongoDB 
+                    or traditional SQL for persisting users' documents (problem definitions in Leibniz, solutions in pdf and html). 
+                    Please <a href="mailto:rogeryi@comcast.net">email me</a> if you have any comments on that. 
+                  </p>
+
+                  <p>
+                    Since we essentially have zero-experience in marketing and sell in the Ed industry (or any industries for that 
+                    matter), we will need experienced insiders in the industry to join us in the future if we eventuially get funded, 
+                    to help us <b> become a trusted learning service partner to education institutions in the world </b>, which is 
+                    our long term goal. In the mean time, we'd greatly appreciate if you can introduce us to potential investors and 
+                    open-minded collaborators in education institutions. BTW, my email address is <font color="blue">
+                    rogeryi@comcast.net</font>. Thank you for reading that far!
+                  </p>
                 </div>
               </div>
-              <div class="accordion-group">
-                <div class="accordion-heading">
-                  <a class="accordion-toggle" data-toggle="collapse"
-                     data-parent="#accordion2" href="#collapseTwo">
-                    What's a Frequently Asked Question?
-                  </a>
-                </div>
-                <div id="collapseTwo" class="accordion-body collapse">
-                  <div class="accordion-inner">
-                    A question which is commonly asked by users.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+            </div>                         
+    			
+    			</div>
 
-      </div>
+    		</div>
+    	</div>
 
       <!-- Not crucial, but we put this under a CC By-SA 3.0 license. -->
       <!-- http://creativecommons.org/licenses/ -->
