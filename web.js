@@ -18,6 +18,12 @@ app.get('/', function(request, response) {
   response.send(data);
 });
 
+// Render example.com/Demo
+app.get('/demo', function(request, response) {  
+  response.send("Send us an email with your contact info to rogeryi@comcast.net , we will send you the link to our demo. Thank you!");
+});
+
+
 // Render example.com/orders
 app.get('/orders', function(request, response) {
   global.db.Order.findAll().success(function(orders) {
